@@ -12,6 +12,7 @@ class Core {
 	static $DB_LOCAL = 'localhost';
 	static $DOMAIN   = 'http://strap3.loc/';
 	static $JS       = array();
+	// чето так стили не подключаются, а чего ??? убирал эти 3 стр все одно...
 	static $CSS      = array(
 			'<link href="/css/bootstrap.css" rel="stylesheet">',
 			'<link href="/css/font-awesome.css" rel="stylesheet">',

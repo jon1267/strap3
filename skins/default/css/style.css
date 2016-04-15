@@ -76,6 +76,20 @@
     text-align: justify;
     //border: 1px solid #000000;
 }
+/* колонка на 2/3 ширины остальное вроде как _13 и _2 * для about.html*/
+.col_12 {
+    margin: 10px 20px 0 10px;
+    width: 600px;
+    float: left;
+    text-align: justify;
+//position: relative;
+//border: 1px solid #000000;
+}
+.img12 {
+    float: left;
+    margin-right: 15px;
+//margin-bottom: 15px;
+}
 .col_2 {
     margin-top: 10px;
     margin-right: 20px;
@@ -119,10 +133,29 @@
 //text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;
-    //color: #666666;
-    color: #5ad5ad;
+    color: #666666;
     text-align:left;
     line-height:1.4;
+}
+.color-star {
+    //color: #d27a63;
+    color: #006400;
+}
+.color-errors {
+    color: #ff0000;
+    font-weight: normal;
+    float: right;
+}
+.color-quest {
+    //color: #00008b;
+    color: #666666;
+}
+.table thead tr {
+    background: #333;
+    color: #fff;
+}
+.table thead tr th {
+    text-align: center;
 }
 .img456 {
     margin-bottom: 10px;
@@ -195,9 +228,6 @@
 }
 .soc-ic {
     padding-left: 10px
-}
-.grey-fone  {
-    background-colorg: #e5e5e5;
 }
 
 /*

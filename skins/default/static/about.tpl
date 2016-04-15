@@ -6,7 +6,7 @@
 	<span class="zagol3">о нашей компании</span><br><br>
     <div class="clear"></div>
     <div class="img12">
-        <img src="/img/pic1.png" alt="">
+        <img src="/skins/<?php echo Core::$SKIN; ?>/img/pic1.png" alt="">
     </div>
 				<span class="boldtext">Душа моя озарена неземной радостью,
 										как эти чудесные весенние утра, которыми
@@ -57,7 +57,7 @@
 <div class="col_13">
 	<span class="zagol3">latest position</span><br><br>
 	<div class="img123">
-		<img src="/img/home-img7.png" alt="">
+		<img src="/skins/<?php echo Core::$SKIN; ?>/img/home-img7.png" alt="">
 	</div>
 	<span class="zagol2">Lorem ipsum dolor </span>
 	<span class="zagol2">sit amet, consectet.</span><br><br>
@@ -71,7 +71,7 @@
 <div class="col_2">
 	<span class="zagol3">&nbsp&nbsp </span><br><br>
 	<div class="img123">
-		<img src="/img/home-img6.png" alt="">
+		<img src="/skins/<?php echo Core::$SKIN; ?>/img/home-img6.png" alt="">
 	</div>
 	<span class="zagol2">In enim justo, rhoncus</span>
 	<span class="zagol2">imperdiet a, venen.</span><br><br>
@@ -85,7 +85,7 @@
 <div class="col_13">
 	<span class="zagol3">&nbsp&nbsp </span><br><br>
 	<div class="img123">
-		<img src="/img/home-img5.png" alt="img123">
+		<img src="/skins/<?php echo Core::$SKIN; ?>/img/home-img5.png" alt="img123">
 	</div>
 	<span class="zagol2">Donec pede justo, en </span>
 	<span class="zagol2">ringilla vel, aliquet</span><br><br>

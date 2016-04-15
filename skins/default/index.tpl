@@ -83,7 +83,7 @@
                                                     class="caret"></b></a>
                                             <ul class="dropdown-menu">
                                                 <li><a href="/static/about">История фирмы</a></li>
-                                                <li><a href="#">Новости</a></li>
+                                                <li><a href="/news/main">Новости</a></li>
                                                 <li><a href="#">Наши клиенты</a></li>
                                                 <li class="divider"></li>
                                                 <li><a href="#">Расчет стоимости</a></li>
