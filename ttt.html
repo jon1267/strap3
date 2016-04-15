@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap - подключил в config.php стр 15 -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- 1. Подключить библиотеку jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- 2. Подключить скрипт moment-with-locales.min.js для работы с датами -->
+    <script type="text/javascript" src="js/moment-with-locales.min.js"></script>
+    <!-- 4. Подключить скрипт виджета "Bootstrap datetimepicker" -->
+    <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+    <!-- 6. Подключить CSS виджета "Bootstrap datetimepicker" -->
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
+
+</head>
+<body>
+
+<div class="container">
+
+
+    <h3>Привет, мир!</h3>
+    <form action="" method="post">
+        <div class="form-group">
+            <p><label><input type="text" class="form-control" size="50" placeholder="Логин" name="login"></label></p>
+            <p><label><input type="password" class="form-control" size="50" placeholder="Пароль" name="pass"></label></p>
+        </div>
+
+        <span rel="tooltip" data-placement="right" title="Текст подказки"><i class="fa fa-question-circle fa-2x" ></i></span>
+
+        <!-- Элемент HTML с id равным datetimepicker1 -->
+        <div class="input-group date" id="datetimepicker1" style="width: 300px;">
+                <input type="text" class="form-control" >
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+        </div>
+
+        <p> <!-- <p class="text-center"> -->
+            <!--<button class="btn btn-primary btn-sm" type="submit"><i class="fa fa-sign-in"></i> Вход </button>-->
+            <button class="btn btn-sm btn-mymore" type="submit"><i class="fa fa-sign-in"></i> Вход </button>
+        </p>
+
+    </form>
+
+<!-- Инициализация виджета "Bootstrap datetimepicker" -->
+
+
+</div>
+
+<!-- Инициализация виджета "Bootstrap datetimepicker" -->
+<script type="text/javascript">
+   $(function () {
+          //Идентификатор элемента HTML (например: #datetimepicker1), для которого необходимо инициализировать виджет "Bootstrap datetimepicker"
+          $('#datetimepicker1').datetimepicker(
+             {pickTime: false, language: 'ru'}
+          );
+        });
+</script>
+
+<!--для работы всплывающих посказок -->
+<script>
+    $(function(){
+        $("[rel='tooltip']").tooltip();
+        $("[rel='popover']").popover({trigger: "hover" });
+    });
+</script>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
+

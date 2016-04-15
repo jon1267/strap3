@@ -1,0 +1,18 @@
+AddDefaultCharset UTF-8
+php_flag display_errors ON
+php_value mbstring.internal_encoding UTF-8
+php_flag magic_quotes_gpc OFF
+php_flag magic_quotes_runtime OFF
+php_flag register_globals OFF
+
+RewriteEngine ON
+
+#RewriteCond %{REQUEST_URI} !^/admin
+RewriteCond %{REQUEST_URI} !^/forum
+RewriteCond %{REQUEST_URI} !^/skeditor
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ index.php?route=$1 [L,QSA]
+

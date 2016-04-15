@@ -1,0 +1,24 @@
+Zapros: - 
+		DELETE FROM `zajavka`
+		WHERE `id` IN ()
+	<br>
+Error: - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 2<br>
+File : - D:\OpenServer\domains\strap3.loc\modules\zajavka\main.php<br>
+Line : - 10   Date: 12-04-2016 14:21:28<br>
+
+Zapros: - 
+		DELETE FROM `zajavka`
+		WHERE `id` IN ()
+	<br>
+Error: - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 2<br>
+File : - D:\OpenServer\domains\strap3.loc\modules\zajavka\main.php<br>
+Line : - 10   Date: 12-04-2016 14:21:56<br>
+
+Zapros: - 
+		DELETE FROM `zajavka`
+		WHERE `id` IN ()
+	<br>
+Error: - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 2<br>
+File : - D:\OpenServer\domains\strap3.loc\modules\zajavka\main.php<br>
+Line : - 10   Date: 12-04-2016 14:23:41<br>
+

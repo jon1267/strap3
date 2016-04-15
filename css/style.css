@@ -1,0 +1,264 @@
+#header {
+    //height: 120px;
+    width: 970px;
+    margin: 5px auto;
+    position: relative;
+    //border: 1px solid #000000;
+}
+#content {
+    background: #fff;
+    width: 970px;
+    margin: 0 auto;
+    position: relative;
+//border: 1px solid #000000;
+}
+#footer {
+    height: 60px;
+    width: 970px;
+    margin: 30px auto;
+//border: 1px solid #000000;
+}
+.ent-reg {
+    float: right;
+    padding-right: 20px;
+}
+#ent-reg-link  {
+    color: #707070;
+    text-decoration: none;
+}
+#ent-reg-link:hover {
+    color: #000000;
+    text-decoration: none;
+}
+.my-er-modal {
+    color: #707070;
+    text-decoration: none;
+}
+.my-er-modal:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+.btn-mymore, .btn-mymore:visited  {
+    margin-top: 20px;
+    background-color: #5c5c5c;
+    color: #ffffff;
+    border: 1px solid #5c5c5c;
+    //border-radius: 7px;
+}
+.btn-mymore:hover {
+    background-color: #959595;;
+    color: #fff;
+    border: 1px solid #959595;
+}
+#logo {
+    margin: 30px 0 30px 0;
+}
+/* ограничитиваем ширину и выставляем контейнер с навигацией*/
+.nav-border {
+    width: 550px;
+    float: right;
+    margin-top: 25px;
+}
+.nav-width {
+    width: 550px;
+}
+/* центрируем слайдер. ! 940 слайдер не крутит !!! */
+.center {
+    margin: 5px auto 20px;
+    width: 941px;
+}
+
+.col_13 {
+    margin: 10px 10px;
+    width: 295px;
+    float: left;
+    position: relative;
+    text-align: justify;
+    //border: 1px solid #000000;
+}
+/* колонка на 2/3 ширины остальное вроде как _13 и _2 * для about.html*/
+.col_12 {
+    margin: 10px 20px 0 10px;
+    width: 600px;
+    float: left;
+    text-align: justify;
+//position: relative;
+//border: 1px solid #000000;
+}
+.img12 {
+    float: left;
+    margin-right: 15px;
+//margin-bottom: 15px;
+}
+.col_2 {
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left:  20px;
+    width: 295px;
+    float: left;
+    text-align: justify;
+    position: relative;
+    //border: 1px solid #000000;
+}
+.col_1cont {
+    margin: 30px 0;
+//margin-top: 30px;
+//height: 170px;
+    width: 400px;
+    float: left;
+    position: relative;
+//border: 1px solid #000000;
+}
+.col_2cont {
+    margin: 30px 0;
+//margin-top: 30px;
+//height: 170px;
+    width: 540px;
+    float: left;
+    position: relative;
+// border: 1px solid #000000;
+}
+.img123 {
+    float: left;
+    padding-right: 10px;
+    padding-bottom: 0;
+}
+.simpletext {
+    font-size: 13px;
+    color: #707070;
+    //color: #838383;
+    line-height: 1.6;
+}
+.boldtext {
+//text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #666666;
+    text-align:left;
+    line-height:1.4;
+}
+.color-star {
+    //color: #d27a63;
+    color: #006400;
+}
+.color-errors {
+    color: #ff0000;
+    font-weight: normal;
+    float: right;
+}
+.color-quest {
+    //color: #00008b;
+    color: #666666;
+}
+.table thead tr {
+    background: #333;
+    color: #fff;
+}
+.table thead tr th {
+    text-align: center;
+}
+.img456 {
+    margin-bottom: 10px;
+    float: left;
+}
+.zagol1 {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bold;
+    color: #d22a10;
+    float: left;
+//margin: 0 10px;
+    margin-top: 10px;
+//border: 1px solid #000000;
+}
+.zagol2 {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bold;
+    color: #666666;
+    float: left;
+//margin: 0 10px;
+//border: 1px solid #000000;
+}
+.zagol3 {
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: bold;
+    color: #d22a10;
+    //float: left;
+//margin-top: 10px;
+    margin-bottom: 15px;
+//border: 1px solid #000000;
+}
+.zagol4 {
+    font-size: 13px;
+    font-weight: bold;
+    color: #666666;
+    float: left;
+    margin-top:  3px;
+    margin-left: 10px;
+//border: 1px solid #000000;
+}
+.clear {
+    clear: both;
+}
+.line {
+    width: 940px;
+    height: 1px;
+    background-color: #cccccc;
+    margin: 15px 0 0 10px;
+}
+.footer {
+    margin: 30px 0;
+    position: relative;
+//border: 1px solid #000000;
+}
+.fzagol {
+    font-size: 13px;
+    font-weight: bold;
+    color: #666666;
+    float: left;
+    padding-top: 10px;
+}
+.ftext {
+    font-size: 13px;
+    color: #838383;
+    float: left;
+    padding-top: 10px;
+}
+.soc-ic {
+    padding-left: 10px
+}
+
+/*
+.center {
+    margin: 20px auto;
+    width: 940px;
+}
+#ceter {
+    margin: 20px auto;
+    width: 970px;
+}
+*/
+/*
+#main-menu-wrap {
+    border: 1px solid #000000;
+}
+.main-menu {
+    margin: 0;
+    padding: 10px 15px;
+    list-style: none;
+    border: 1px solid #E5E5E5;
+    background: #f5f5f5;
+}
+
+.main-menu li {
+    display: block;
+    margin-right: 10px;
+}
+
+.main-menu a {
+    color: #0088CC;
+    text-decoration: none;
+}
+*/
