@@ -21,16 +21,14 @@ class="img-circle" $row['description text'] <br><br><br><br> <div class="clear">
 ?>
 
 			<div>
-
-
-				<div>
+				<div class="just-text">
 					<div class="img123">
 						<img src="/skins/<?php echo Core::$SKIN; ?>/img/<?php echo $pname; ?>" class="img-rounded" alt="round">
 					</div>
 					<span class="boldtext"><?php echo $row['title']; ?></span>&nbsp;&nbsp;
-					<span style="color:#777777;font-size:10px;"><?php echo ' '.$row['date']; ?></span><br>
-					<span class="simpletext"><?php echo $row['description']; ?></span>&nbsp;&nbsp;
-					<a href="/news/edit?id=<?php echo $row['id']; ?>" class="simpletext">Подробнее</a> &nbsp;<br><br><br><br>
+					<span class="date-show"><?php echo ' '.$row['date']; ?></span><br>
+					<span class="simpletext"><?php echo $row['description']; ?></span><br>
+					<a href="/news/show?id=<?php echo $row['id']; ?>&pic=<?php echo $pname; ?>" class="simpletext">Подробнее</a> &nbsp;<br><br><br>
 				</div>
 			</div>
 
