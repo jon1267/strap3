@@ -84,7 +84,7 @@
                                             <ul class="dropdown-menu">
                                                 <li><a href="/static/about">История фирмы</a></li>
                                                 <li><a href="/news/main">Новости</a></li>
-                                                <li><a href="#">Наши клиенты</a></li>
+                                                <li><a href="/static/servises">Наши клиенты</a></li>
                                                 <li class="divider"></li>
                                                 <li><a href="#">Расчет стоимости</a></li>
                                             </ul>
@@ -204,6 +204,15 @@
     </div>
 </div>
 <!-- конец модальное окно вход регистрация -->
+
+<!-- Этот код запускает карусель -->
+<!--<script type="text/javascript">
+//  $(document).ready(function(){
+//      // Инициализирует карусель
+//      $('#carousel').carousel({interval: 7000})
+//      $('#carousel').carousel('cycle')
+//  });
+</script> -->
 
 <!-- Инициализация виджета "Bootstrap datetimepicker"               'dateFormat': "yy-mm-dd", -->
 <script type="text/javascript">
