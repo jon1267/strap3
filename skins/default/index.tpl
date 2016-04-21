@@ -90,8 +90,8 @@
                                             </ul>
 
                                         </li>
-                                        <li><a href="/zajavka/main">ЗАЯВКА</a></li>
-                                        <!--
+                                        <li><a href="/zajavka/add">ЗАЯВКА</a></li>
+                                        <!--/main
                                         <li class="dropdown">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">УСЛУГИ <b
                                                     class="caret"></b> </a>
@@ -107,16 +107,19 @@
                                         <li><a href="/static/contacts">КОНТАКТЫ</a></li>
                                         <!-- index.php?module=static&page=contacts -->
                                         <?php if ( isset($_SESSION['user']) AND ($_SESSION['user']['access'] == 5) ) { ?>
+                                            <li><a href="/admin/static/main">АДМИН</a></li>
+                                            <!--
                                             <li class="dropdown">
                                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">АДМИН <b
                                                         class="caret"></b></a>
                                                 <ul class="dropdown-menu">
                                                     <li><a href="#">Новости</a></li>
-                                                    <li><a href="#">Заявки</a></li>
+                                                    <li><a href="/admin/zajavka/main">Заявки</a></li>
                                                     <li class="divider"></li>
                                                     <li><a href="#">Пользователи</a></li>
                                                </ul>
                                             </li>
+                                            -->
                                         <?php } ?>
                                     </ul>
                                 </div>
@@ -205,7 +208,7 @@
 </div>
 <!-- конец модальное окно вход регистрация -->
 
-<!-- Этот код запускает карусель -->
+<!-- Этот код запускает карусель. может надоедать...-->
 <!--<script type="text/javascript">
 //  $(document).ready(function(){
 //      // Инициализирует карусель

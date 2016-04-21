@@ -60,7 +60,7 @@ if(isset($_POST['ok'],$_POST['otkuda'],$_POST['kuda'],$_POST['transp'],$_POST['d
 		  WHERE `id` = " . (int)$_GET['id'] . "
 		");
 		$_SESSION['info'] = 'Заявка была изменена';
-		header('Location: /zajavka/main');
+		header('Location: /admin/zajavka/main');
 		exit();
 	}
 }
@@ -72,7 +72,7 @@ $zajavki = q("
 ");
 if( !$zajavki->num_rows ) {
 	$_SESSION['info']='Данной заявки не существует';
-	header("Location: /zajavka/main");
+	header("Location: /admin/zajavka/main");
 	exit();
 }
 $row = $zajavki->fetch_assoc();

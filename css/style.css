@@ -38,7 +38,7 @@
     color: #000000;
     text-decoration: underline;
 }
-.btn-mymore, .btn-mymore:visited  {
+.btn-mymore, .btn-mymore:visited {
     margin-top: 20px;
     background-color: #5c5c5c;
     color: #ffffff;
@@ -111,12 +111,13 @@
 }
 .col_2cont {
     margin: 30px 0;
+    padding: 0 30px;
 //margin-top: 30px;
 //height: 170px;
     width: 540px;
     float: left;
     position: relative;
-// border: 1px solid #000000;
+ //border: 1px solid #000000;
 }
 .img123 {
     float: left;

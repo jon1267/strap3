@@ -8,13 +8,12 @@ if(isset($_POST['login'],$_POST['pass'])) {
 	// с введенным при авторизации логином и пассом
 
 	//----???--- вот тут !!! уже повторный коннект к БД. Просто ухожу от fatal error Нада делать класс,
-	// проверять есть ли коннект, если уже есть return указатель на коннект, если нет то тада коннектить к бд.
+	// класс есть, эти 3 строки ниже, все равно нужны, это видно бздык модального окна...
 	session_start(); // твою мать... токо так заработала вставка меню админа.
 	include_once '../../config.php';
-	include_once '../../libs/default.php';
-
-	$link = mysqli_connect(Core::$DB_LOCAL,Core::$DB_LOGIN,Core::$DB_PASS,Core::$DB_NAME);
-	mysqli_set_charset($link,'utf8');
+	include_once '../../libs/default2.php';
+	//$link = mysqli_connect(Core::$DB_LOCAL,Core::$DB_LOGIN,Core::$DB_PASS,Core::$DB_NAME);
+	//mysqli_set_charset($link,'utf8');
 	//----???---
 
 	$res = q("
@@ -26,8 +25,10 @@ if(isset($_POST['login'],$_POST['pass'])) {
 	");
 	// если $res непустой, то авторизацию считаем успешной...
 	// создаем массив $_SESSION['user']= array(ID,LOGIN,PASSWORD,EMAIL,age,active,hash,access)
-	if(mysqli_num_rows($res)) {
-		$_SESSION['user'] = mysqli_fetch_assoc($res);
+	//if(mysqli_num_rows($res)) {
+	if($res->num_rows) {
+		$_SESSION['user'] = $res->fetch_assoc();
+		$res->close(); // выборка скинута в сессию, наверное ??? больше ненужна, очищаю
 		$status = 'OK';
 		header("Location: /static/main");
 		exit();
@@ -60,4 +61,5 @@ if(isset($_POST['login'],$_POST['pass'])) {
 		header("Location: /static/main");
 		exit();
 	}
+	DB::close();
 }

@@ -1,7 +1,7 @@
 <?php
-
-if(isset($_POST['ok'],$_POST['otkuda'],$_POST['kuda'],$_POST['transp'],$_POST['datap'],$_POST['gruz'],
-	$_POST['ves'],$_POST['vol'],$_POST['fio'],$_POST['tel'],$_POST['email'],$_POST['notes'])){
+//wtf($_POST,1);
+if(isset($_POST['add'],$_POST['otkuda'],$_POST['kuda'],$_POST['transp'],$_POST['datap'],$_POST['gruz'],
+		 $_POST['ves'],$_POST['vol'],$_POST['fio'],$_POST['tel'],$_POST['email'],$_POST['notes'])){
 	// удаление лидирующих и замыкающих пробелов
 	foreach($_POST as $k=>$v) {
 		$_POST[$k] = trim($v);
@@ -44,8 +44,8 @@ if(isset($_POST['ok'],$_POST['otkuda'],$_POST['kuda'],$_POST['transp'],$_POST['d
 	}
 
 	if (!count($errors)) {
-		q("
-		  UPDATE `zajavka` SET
+			q("
+		  INSERT INTO `zajavka` SET
 		  `otkuda`   = '" . es($_POST['otkuda']) . "',
 		  `kuda`     = '" . es($_POST['kuda']) . "',
 		  `transp`   = '" . es($_POST['transp']) . "',
@@ -57,39 +57,11 @@ if(isset($_POST['ok'],$_POST['otkuda'],$_POST['kuda'],$_POST['transp'],$_POST['d
 		  `tel`      = '" . es($_POST['tel']) . "',
 		  `email`    = '" . es($_POST['email']) . "',
 		  `notes`    = '" . es($_POST['notes']) . "'
-		  WHERE `id` = " . (int)$_GET['id'] . "
 		");
-		$_SESSION['info'] = 'Заявка была изменена';
-		header('Location: /zajavka/main');
+		$_SESSION['info'] = 'Заявка добавлена';
+		header('Location: /admin/zajavka/main');
 		exit();
 	}
-}
-
-$zajavki = q("
-	SELECT * FROM `zajavka`
-	WHERE `id` = ".(int)$_GET['id']."
-	LIMIT 1
-");
-if( !$zajavki->num_rows ) {
-	$_SESSION['info']='Данной заявки не существует';
-	header("Location: /zajavka/main");
-	exit();
-}
-$row = $zajavki->fetch_assoc();
-if(!empty($row['datap'])) {
-	// тут дата дб в виде Y-mm-dd конвертим в dd.mm.Y для отбр в форме
-	$row['datap'] = datru($row['datap']);
-}
-
-// это если при корректировке, в поле набрали что-то, и вылезла ошибка,
-// тогда этот код сохранит набранное, а не возьмет значение из базы...
-if(isset($_POST['ok'],$_POST['otkuda'],$_POST['kuda'],$_POST['transp'],$_POST['datap'],$_POST['gruz'],
-	$_POST['ves'],$_POST['vol'],$_POST['fio'],$_POST['tel'],$_POST['email'],$_POST['notes'])) {
-	foreach($_POST as $k => $v) {
-		$row[$k] = $_POST[$k];
-	}
-	if(!empty($row['datap'])) {
-		// тут дата дб в виде Y-mm-dd конвертим в dd.mm.Y для отбр в форме
-		$row['datap'] = datru($row['datap']);
-	}
+//	echo "форма отправлена...";
+//	exit();
 }

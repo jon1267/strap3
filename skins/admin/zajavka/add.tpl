@@ -59,10 +59,10 @@
           </div></p>
           <div>
               <p>
-                  <label class="boldtext">Вес :&nbsp;&nbsp;<span rel="tooltip" data-placement="right" title="Вес груза кг."><i class="fa fa-question-circle " ></i></span>
+                  <label class="boldtext">Вес:&nbsp;&nbsp;<span rel="tooltip" data-placement="right" title="Вес груза кг."><i class="fa fa-question-circle " ></i></span>
                   <span class="color-errors"><?php echo @$errors['ves'];?></span>
                   <input type="text" class="form-control" size="20" name="ves" value="<?php echo @htmlspecialchars($_POST['ves']); ?>"></label>&nbsp;&nbsp;
-                  <label class="boldtext">Объем :&nbsp;&nbsp;<span rel="tooltip" data-placement="right" title="Объем груза м3"><i class="fa fa-question-circle " ></i></span>
+                  <label class="boldtext">Объем:&nbsp;&nbsp;<span rel="tooltip" data-placement="right" title="Объем груза м3."><i class="fa fa-question-circle " ></i></span>
                   <span class="color-errors"><?php echo @$errors['vol'];?></span>
                   <input type="text" class="form-control" size="20" name="vol" value="<?php echo @htmlspecialchars($_POST['vol']); ?>"></label>
               </p>

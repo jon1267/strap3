@@ -3,7 +3,7 @@
 <!--Этот вариант когда заявка в таблице. Заявка в строчку см main_.php Когда таблица бооольшая ??? незнаю-->
 <div>
   <span class="zagol2">Все заявки </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="/zajavka/add" title="Добавить новую заявку" class="btn btn-primary btn-sm"><i class="fa fa-files-o fa-lg"></i>&nbsp;&nbsp; Добавить заявку </a>
+    <a href="/admin/zajavka/add" title="Добавить новую заявку" class="btn btn-primary btn-sm"><i class="fa fa-files-o fa-lg"></i>&nbsp;&nbsp; Добавить заявку </a>
     <!-- Вы водит фразы ..была изменена, ...была удалена -->
     <?php if(isset($info)) { ?>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -27,8 +27,8 @@
           //echo $zastr;
           // формирую таблицу...$tbody содержит тело табл. без тегов <tbody></tbody>
           $tbody .= '<tr>'.'<td>'.'<input type="checkbox" name="ids[]" title="Пометить на удаление" value="'.$row['id'].'">&nbsp;&nbsp;'.
-                           '<a href="/zajavka/edit/?id='.$row['id'].'"title="Редактировать"><i class="fa fa-pencil fa-lg"></i></a>&nbsp;&nbsp;'.
-                           '<a href="/zajavka/main/?action=delete&id='.$row['id'].'" title="Удалить одну"><i class="fa fa-trash-o fa-lg"></i></a>&nbsp;'.'</td>'.
+                           '<a href="/admin/zajavka/edit/?id='.$row['id'].'"title="Редактировать"><i class="fa fa-pencil fa-lg"></i></a>&nbsp;&nbsp;'.
+                           '<a href="/admin/zajavka/main/?action=delete&id='.$row['id'].'" title="Удалить одну"><i class="fa fa-trash-o fa-lg"></i></a>&nbsp;'.'</td>'.
                            '<td>'.mb_substr($row['otkuda'],0,25).'</td>'.
                            '<td>'.mb_substr($row['kuda'],0,25).'</td>'.
                            '<td>'.mb_substr($row['gruz'],0,20).'</td>'.

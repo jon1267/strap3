@@ -1,22 +1,29 @@
 <?php
-// обработка авторизации(вход). Регистрация - это када мы (точнее юзер) в первый раз заводим
+// обработка авторизации(входа). Регистрация - это када мы (точнее юзер) в первый раз заводим
 // наши данные, юзер сохраняется в табл `users` получает письмо активации, активируется...
-// Все последующие входы, делается авторизация(вход), это  ввод токо логина и пароля...мб псица запомнить меня (автоавторизация)
+// Все последующие входы, делается авторизация(вход), ввод токо логина и пароля...мб псица запомнить меня (автоавторизация)
+// ЭТО - обработка входа через модальное окно. Сложнее отдельной html стр. *.tpl ненужен, вывод делать нельзя.
 if(isset($_POST['login'],$_POST['pass'])) {
 	// ищем, есть ли в БД `users` хотя-бы 1 пользователь 
 	// с введенным при авторизации логином и пассом
-	session_start(); // твою мать...заработала вставка меню админа
-	$salt  = 'ABCD';
-	$salt2 = 'DCBA';
-	$link = mysqli_connect('localhost','test','test','main');
+
+	//----???--- вот тут !!! уже повторный коннект к БД. Просто ухожу от fatal error Нада делать класс,
+	// проверять есть ли коннект, если уже есть return указатель на коннект, если нет то тада коннектить к бд.
+	session_start(); // твою мать... токо так заработала вставка меню админа.
+	include_once '../../config.php';
+	include_once '../../libs/default.php';
+
+	$link = mysqli_connect(Core::$DB_LOCAL,Core::$DB_LOGIN,Core::$DB_PASS,Core::$DB_NAME);
 	mysqli_set_charset($link,'utf8');
-	$res = mysqli_query($link,"
+	//----???---
+
+	$res = q("
 		SELECT * FROM `users`
-		WHERE `login`    = '".mysqli_real_escape_string($link,$_POST['login'])."'
-		  AND `password` = '".crypt(md5($_POST['pass'].$salt),$salt2)."'
+		WHERE `login` = '".es($_POST['login'])."'
+		  AND `password` = '".myHash($_POST['pass'])."'
 		  AND `active` = 1
 		LIMIT 1
-	") or die(mysqli_error($link));
+	");
 	// если $res непустой, то авторизацию считаем успешной...
 	// создаем массив $_SESSION['user']= array(ID,LOGIN,PASSWORD,EMAIL,age,active,hash,access)
 	if(mysqli_num_rows($res)) {
@@ -45,8 +52,11 @@ if(isset($_POST['login'],$_POST['pass'])) {
 //		}
 
 	} else {
+		$_SESSION['error'] = 'NO';
 		$error = 'Нет пользователя с таким логином или паролем...';
 		// доработать. Нада сообщение что нету такова логина-пароля
+		// include_once '../../skins/default/cab/auth.tpl'; кстати это работает но ничего не решает...
+		// sleep(3); пауза в 3 секунды
 		header("Location: /static/main");
 		exit();
 	}

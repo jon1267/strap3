@@ -1,5 +1,4 @@
 <div>
-
 	<span class="zagol3">Новости компании</span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/news/main" class="simpletext">Вернуться к новостям</a>
 	<br><br>
 	<div class="just-text">

@@ -6,12 +6,12 @@ session_start();
 
 // Конфиг сайта и вспом. функц.
 include_once './config.php';
-include_once './libs/default.php';
+include_once './libs/default2.php';
 
 // открытие базы...поставили перед variables.пхп тк будет переделка 
 // variables.php под доставание статич. страниц из БД 
-$link = mysqli_connect(Core::$DB_LOCAL,Core::$DB_LOGIN,Core::$DB_PASS,Core::$DB_NAME);
-mysqli_set_charset($link,'utf8');
+   //$link = mysqli_connect(Core::$DB_LOCAL,Core::$DB_LOGIN,Core::$DB_PASS,Core::$DB_NAME);
+   //mysqli_set_charset($link,'utf8');
 
 include_once './variables.php';
 
@@ -36,3 +36,4 @@ ob_start();
 ob_end_clean();
 
 include './skins/'.Core::$SKIN.'/index.tpl';
+exit;
