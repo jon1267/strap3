@@ -160,19 +160,21 @@ function myHash($var) {
 function datsql($datel) {
 	//$tmp[]=('28','05','2016')
 	if(empty($datel)) return ;
+	$datel = substr($datel,0,10); //отсекаем дату из даты-времени
 	$tmp = explode('.',$datel);
 	$datel = $tmp[2]."-".$tmp[1]."-".$tmp[0];
-	if( $datel == '0000-00-00' ) $datel = '';
+	if( $datel == '0000-00-00' ) $datel = ''; // это нифига не работает, в базу идут нули...
 	return $datel;
 }
 
-// конвертиров даты формата MySQL 2016-05-28 в формат 28.05.2016
+// конвертиров даты (и даты-времени) формата MySQL 2016-05-28 в формат 28.05.2016
 // вход строка в Y-mm-dd разделенная тире
 function datru($datel) {
 	//$tmp[]=('2015','05','28')
 	if(empty($datel)) return ;
+	$datel = substr($datel,0,10); //отсекаем дату из даты-времени
 	$tmp = explode('-',$datel);
 	$datel = $tmp[2].'.'.$tmp[1].'.'.$tmp[0];
-	if( $datel == '00.00.0000' ) $datel = '';
+	if( $datel == '00.00.0000' ) $datel = ''; // это нифига не работает, в базу идут нули...
 	return $datel;
 }

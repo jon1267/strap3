@@ -6,7 +6,7 @@
 			<img src="/skins/<?php echo Core::$SKIN; ?>/img/<?php echo $_GET['pic']; ?>" class="img-rounded" alt="round">
 		</div>
 		<span class="boldtext"><?php echo $row['title']; ?></span>&nbsp;&nbsp;
-		<span class="date-show"><?php echo ' '.$row['date']; ?></span><br>
+		<span class="date-show"><?php echo ' '.datru($row['date']); ?></span><br>
 		<span class="simpletext "><?php echo $row['text']; ?></span>
 	</div>
 </div><br>

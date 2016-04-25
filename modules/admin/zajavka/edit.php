@@ -23,8 +23,12 @@ if(isset($_POST['ok'],$_POST['otkuda'],$_POST['kuda'],$_POST['transp'],$_POST['d
 	if( empty($_POST['fio']) ) {
 		$errors['fio'] = 'Не указано контактное лицо';
 	}
+	// пробую отсечь пустое поле tel и пробую регулярку по № тел.
 	if( empty($_POST['tel']) ) {
 		$errors['tel'] = 'Нет телефона';
+	} elseif (!preg_match('#^[\d-\s\+\(\)]+\d$#ui', $_POST['tel'])) {
+		// регулярочка никакая, потом усилить...
+		$errors['tel'] = 'Плохой номер';
 	}
 	if(!empty($_POST['ves']) AND  !filter_var($_POST['ves'],FILTER_VALIDATE_INT) ) {
 		$errors['ves'] = 'Вес кг, число 1 - 99999';
