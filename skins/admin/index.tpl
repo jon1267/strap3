@@ -51,7 +51,7 @@
 			<ul class="nav navbar-nav">
 				<li><a href="/static/main">НА САЙТ</a></li>
 				<li><a href="/admin/zajavka/main">ЗАЯВКИ</a></li>
-				<li><a href="#">НОВОСТИ </a></li>
+				<li><a href="/admin/news/main">НОВОСТИ </a></li>
 				<!--
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">УСЛУГИ <b

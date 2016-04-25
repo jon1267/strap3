@@ -11,7 +11,7 @@ if(isset($_POST['login'],$_POST['pass'])) {
 	// класс есть, эти 3 строки ниже, все равно нужны, это видно бздык модального окна...
 	session_start(); // твою мать... токо так заработала вставка меню админа.
 	include_once '../../config.php';
-	include_once '../../libs/default2.php';
+	include_once '../../libs/default.php';
 	//$link = mysqli_connect(Core::$DB_LOCAL,Core::$DB_LOGIN,Core::$DB_PASS,Core::$DB_NAME);
 	//mysqli_set_charset($link,'utf8');
 	//----???---

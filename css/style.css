@@ -138,6 +138,17 @@
     text-align:left;
     line-height:1.4;
 }
+.date-show {
+    color: #777777;
+    font-size: 10px;
+}
+.date-width {
+    width: 200px;
+}
+.adm-news-label {
+    font-weight: normal;
+}
+
 .color-star {
     //color: #d27a63;
     color: #006400;

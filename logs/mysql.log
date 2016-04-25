@@ -1,24 +1,150 @@
-Zapros: - 
-		DELETE FROM `zajavka`
-		WHERE `id` IN ()
-	<br>
-Error: - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 2<br>
-File : - D:\OpenServer\domains\strap3.loc\modules\zajavka\main.php<br>
-Line : - 10   Date: 12-04-2016 14:21:28<br>
+Zapros: 
+	  INSERT INTO `news` SET
+	  `title`       = 'кывпвыкп',
+	  `date`        =  .NOW().,
+	  `description` = 'укпукп',
+	  `text`        = 'укпукпукп'
+	
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '().,
+	  `description` = 'укпукп',
+	  `text`        = 'укпукпукп' at line 3
+File :  D:\OpenServer\domains\strap3.loc\modules\admin\news\add.php
+Line :  35
+Date:   24-04-2016 15:52:47
+======================================
 
-Zapros: - 
-		DELETE FROM `zajavka`
-		WHERE `id` IN ()
-	<br>
-Error: - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 2<br>
-File : - D:\OpenServer\domains\strap3.loc\modules\zajavka\main.php<br>
-Line : - 10   Date: 12-04-2016 14:21:56<br>
+Zapros: 
+	  INSERT INTO `news` SET
+	  `title`       = '23534524',
+	  `date`        =  STR_TO_DATE($_POST['date'] , 'EUR'),
+	  `description` = '2456246246',
+	  `text`        = '546463466т лн6ок7о6к'
+	
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '['date'] , 'EUR'),
+	  `description` = '2456246246',
+	  `text`        = '546463' at line 3
+File :  D:\OpenServer\domains\strap3.loc\modules\admin\news\add.php
+Line :  35
+Date:   24-04-2016 15:56:01
+======================================
 
-Zapros: - 
-		DELETE FROM `zajavka`
-		WHERE `id` IN ()
-	<br>
-Error: - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 2<br>
-File : - D:\OpenServer\domains\strap3.loc\modules\zajavka\main.php<br>
-Line : - 10   Date: 12-04-2016 14:23:41<br>
+Zapros: 
+	  INSERT INTO `news` SET
+	  `title`       = 'вавава',
+	  `date`        =  STR_TO_DATE($_POST['date'] , '%d.%m.%Y'),
+	  `description` = 'вававпы',
+	  `text`        = 'вапвапквп'
+	
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '['date'] , '%d.%m.%Y'),
+	  `description` = 'вававпы',
+	  `text`        ' at line 3
+File :  D:\OpenServer\domains\strap3.loc\modules\admin\news\add.php
+Line :  35
+Date:   24-04-2016 16:00:17
+======================================
+
+Zapros: 
+	  INSERT INTO `news` SET
+	  `title`       = 'ячсячс',
+	  `date`        =  STR_TO_DATE('". $_POST['date'] ."' , '%d.%m.%Y'),
+	  `description` = 'чясяс',
+	  `text`        = 'ячсячсячс'
+	
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''] ."' , '%d.%m.%Y'),
+	  `description` = 'чясяс',
+	  `text`        = 'я' at line 3
+File :  D:\OpenServer\domains\strap3.loc\modules\admin\news\add.php
+Line :  35
+Date:   24-04-2016 16:02:18
+======================================
+
+Zapros: 
+	  INSERT INTO `news` SET
+	  `title`       = 'ваы варывар ыааптапт',
+	  `date`        =  STR_TO_DATE('". $_POST['date'] ."', '%d.%m.%Y') ,
+	  `description` = 'ыараыврывар',
+	  `text`        = 'выарыварывар'
+	
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''] ."', '%d.%m.%Y') ,
+	  `description` = 'ыараыврывар',
+	  `text`  ' at line 3
+File :  D:\OpenServer\domains\strap3.loc\modules\admin\news\add.php
+Line :  35
+Date:   24-04-2016 16:15:15
+======================================
+
+Zapros: 
+	  INSERT INTO `news` SET
+	  `title`       = 'вывар',
+	  `date`        =  STR_TO_DATE('". $_POST['date'] ."', '\%d\.\%m\.\%Y') ,
+	  `description` = 'апичапчтапт',
+	  `text`        = 'чтсачптапт'
+	
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''] ."', '\%d\.\%m\.\%Y') ,
+	  `description` = 'апичапчтапт',
+	  `te' at line 3
+File :  D:\OpenServer\domains\strap3.loc\modules\admin\news\add.php
+Line :  35
+Date:   24-04-2016 16:17:00
+======================================
+
+Zapros: 
+	  INSERT INTO `news` SET
+	  `title`       = 'ЫВАыв',
+	  `date`        =  STR_TO_DATE('". $_POST['date'] ."', 'EUR') ,
+	  `description` = 'ывпвап',
+	  `text`        = 'ывпывп'
+	
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''] ."', 'EUR') ,
+	  `description` = 'ывпвап',
+	  `text`        = 'ывп' at line 3
+File :  D:\OpenServer\domains\strap3.loc\modules\admin\news\add.php
+Line :  35
+Date:   24-04-2016 16:17:55
+======================================
+
+Zapros: 
+	  INSERT INTO `news` SET
+	  `title`       = '7777',
+	  `date`        =  STR_TO_DATE($_POST['date'], '%d.%m.%Y') ,
+	  `description` = '7777',
+	  `text`        = '7777'
+	
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '['date'], '%d.%m.%Y') ,
+	  `description` = '7777',
+	  `text`        = '7777'' at line 3
+File :  D:\OpenServer\domains\strap3.loc\modules\admin\news\add.php
+Line :  35
+Date:   24-04-2016 21:08:30
+======================================
+
+Zapros: 
+	  INSERT INTO `news` SET
+	  `title`       = '777',
+	  `date`        =  STR_TO_DATE('".$_POST['date']."', '%d.%m.%Y') ,
+	  `description` = '777 777 777',
+	  `text`        = '777b 77778i     6767i8 78'
+	
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '']."', '%d.%m.%Y') ,
+	  `description` = '777 777 777',
+	  `text`        = '777' at line 3
+File :  D:\OpenServer\domains\strap3.loc\modules\admin\news\add.php
+Line :  35
+Date:   24-04-2016 21:10:17
+======================================
+
+Zapros: 
+	  INSERT INTO `news` SET
+	  `title`       = '352345',
+	  `date`        =  STR_TO_DATE('".$_POST['date']."', 'EUR') ,
+	  `description` = '3245456456',
+	  `text`        = '7645674573457537'
+	
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '']."', 'EUR') ,
+	  `description` = '3245456456',
+	  `text`        = '764567457' at line 3
+File :  D:\OpenServer\domains\strap3.loc\modules\admin\news\add.php
+Line :  35
+Date:   24-04-2016 21:11:42
+======================================
 

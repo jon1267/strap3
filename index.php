@@ -6,7 +6,7 @@ session_start();
 
 // Конфиг сайта и вспом. функц.
 include_once './config.php';
-include_once './libs/default2.php';
+include_once './libs/default.php';
 
 // открытие базы...поставили перед variables.пхп тк будет переделка 
 // variables.php под доставание статич. страниц из БД 

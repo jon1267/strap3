@@ -11,7 +11,7 @@ if(isset($_POST['login'],$_POST['pass'])) {
 	// проверять есть ли коннект, если уже есть return указатель на коннект, если нет то тада коннектить к бд.
 	session_start(); // твою мать... токо так заработала вставка меню админа.
 	include_once '../../config.php';
-	include_once '../../libs/default.php';
+	include_once '../../libs/default_old.php';
 
 	$link = mysqli_connect(Core::$DB_LOCAL,Core::$DB_LOGIN,Core::$DB_PASS,Core::$DB_NAME);
 	mysqli_set_charset($link,'utf8');

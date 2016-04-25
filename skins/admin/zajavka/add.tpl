@@ -24,20 +24,20 @@
                 <p><label class="boldtext">Транспорт:&nbsp;
                 <span rel="popover" data-placement="right" data-content="Ваши пожелания к транспорту.
                 Возможно платформа с боковой загрузкой. Тент, будка, крепление груза и тп. "><i class="fa fa-question-circle" ></i></span>
-                <input type="text" class="form-control" size="50" name="transp" value="<?php echo @htmlspecialchars($_POST['transp']); ?>"></label></p>
+                <input type="text" class="form-control " size="50" name="transp" value="<?php echo @htmlspecialchars($_POST['transp']); ?>"></label></p>
             </div>
 
           <div>
               <p><label class="boldtext"><i class="fa fa-certificate color-star"></i> Груз:&nbsp;
               <span rel="tooltip" data-placement="right" title="Что будем перевозить."><i class="fa fa-question-circle " ></i></span>
               <span class="color-errors"><?php echo @$errors['gruz'];?></span>
-              <input type="text" class="form-control" size="50" name="gruz" value="<?php echo @htmlspecialchars($_POST['gruz']); ?>"></label></p>
+              <input type="text" class="form-control " size="50" name="gruz" value="<?php echo @htmlspecialchars($_POST['gruz']); ?>"></label></p>
           </div>
           <div>
               <p><label class="boldtext"><i class="fa fa-certificate color-star"></i> Исполнитель:&nbsp;
                <span rel="tooltip" data-placement="right" title="Фамилия Имя"><i class="fa fa-question-circle " ></i></span>
                <span class="color-errors"><?php echo @$errors['fio'];?></span>
-               <input type="text" class="form-control" size="50" name="fio" value="<?php echo @htmlspecialchars($_POST['fio']); ?>"></label></p>
+               <input type="text" class="form-control " size="50" name="fio" value="<?php echo @htmlspecialchars($_POST['fio']); ?>"></label></p>
           </div>
       </div>
 
@@ -49,7 +49,7 @@
           </div>
           <p><div>
              <label class="boldtext">Дата перевозки:
-              <div class="input-group date" id="datetimepicker1" >
+              <div class="input-group date date-width" id="datetimepicker1" >
                   <input type="text" class="form-control" name="datap" value="<?php echo @htmlspecialchars(datru($_POST['datap'])); ?>">
                   <span class="input-group-addon">
                         <span class="glyphicon glyphicon-calendar"></span>

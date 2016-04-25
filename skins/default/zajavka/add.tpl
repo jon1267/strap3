@@ -49,7 +49,7 @@
           </div>
           <p><div>
              <label class="boldtext">Дата перевозки:
-              <div class="input-group date" id="datetimepicker1" >
+              <div class="input-group date date-width" id="datetimepicker1" >
                   <input type="text" class="form-control" name="datap" value="<?php echo @htmlspecialchars(datru($_POST['datap'])); ?>">
                   <span class="input-group-addon">
                         <span class="glyphicon glyphicon-calendar"></span>

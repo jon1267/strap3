@@ -28,7 +28,6 @@
 <!-- 6. Подключить CSS виджета "Bootstrap datetimepicker" -->
 <link rel="stylesheet" href="/css/bootstrap-datetimepicker.min.css" >
 
-
 <!-- этот код показывает и удаляет текст через 3 сек -->
 <script type="text/javascript">
     setTimeout(function(){ $('.box').fadeOut('fast')},3000);  //3000 = 3 секунд
@@ -84,9 +83,9 @@
                                             <ul class="dropdown-menu">
                                                 <li><a href="/static/about">История фирмы</a></li>
                                                 <li><a href="/news/main">Новости</a></li>
-                                                <li><a href="/static/servises">Наши клиенты</a></li>
+                                                <!--<li><a href="/static/servises">Наши клиенты</a></li>-->
                                                 <li class="divider"></li>
-                                                <li><a href="#">Расчет стоимости</a></li>
+                                                <li><a href="/static/rr">Расчет расстояний</a></li>
                                             </ul>
 
                                         </li>
