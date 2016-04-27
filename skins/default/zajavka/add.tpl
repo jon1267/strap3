@@ -47,7 +47,7 @@
                  <span class="color-errors"><?php echo @$errors['kuda']; ?></span>
                  <input type="text" class="form-control" size="50" name="kuda" value="<?php echo @htmlspecialchars($_POST['kuda']); ?>"></label></p>
           </div>
-          <p><div>
+          <div>
              <label class="boldtext">Дата перевозки:
               <div class="input-group date date-width" id="datetimepicker1" >
                   <input type="text" class="form-control" name="datap" value="<?php echo @htmlspecialchars(datru($_POST['datap'])); ?>">
@@ -56,7 +56,7 @@
                   </span>
               </div>
              </label>
-          </div></p>
+          </div>
           <div>
               <p>
                   <label class="boldtext">Вес :&nbsp;&nbsp;<span rel="tooltip" data-placement="right" title="Вес груза кг."><i class="fa fa-question-circle " ></i></span>

@@ -1,3 +1,6 @@
 <div style="padding:50px;">
-  <h3><?php echo $info; ?></h3>
+  <span class="zagol2"><?php echo $info; ?></span>
 </div>
+<!-- эти 2 дива рисуют тонкую разделит. линию посередине блока content-->
+<div class="clear"></div>
+<div class="line"></div>

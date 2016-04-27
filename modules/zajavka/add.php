@@ -30,7 +30,7 @@ if(isset($_POST['add'],$_POST['otkuda'],$_POST['kuda'],$_POST['transp'],$_POST['
 		// регулярочка никакая, потом усилить...
 		$errors['tel'] = 'Плохой номер';
 	}
-	if(!empty($_POST['ves']) AND  !filter_var($_POST['ves'],FILTER_VALIDATE_INT) ) {
+	if(!empty($_POST['ves']) AND  !filter_var($_POST['ves'],FILTER_VALIDATE_FLOAT) ) {
 		$errors['ves'] = 'Вес кг, число 1-99999';
 	}
 	if(!empty($_POST['vol']) AND  !filter_var($_POST['vol'],FILTER_VALIDATE_FLOAT) ) {

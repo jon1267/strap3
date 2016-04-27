@@ -50,8 +50,7 @@
                 <span class="simpletext"> <?php echo $_SESSION['user']['login']; ?>&nbsp;&nbsp;</span>
                 <a href="/cab/exit" id="ent-reg-link" class="btn  btn-xs" > <i class="fa fa-sign-out"></i> Выход  </a>
             <?php } else { ?>
-                <a href="#" id="ent-reg-link" class="btn  btn-xs" data-toggle="modal" data-target="#modal-1"> <i class="fa fa-sign-in"></i> Вход </a>
-                <a href="/cab/registration" id="ent-reg-link" class="btn  btn-xs"> <i class="fa fa-user-plus"></i> Регистрация </a>
+                <a href="#" id="ent-reg-link" class="btn  btn-xs" data-toggle="modal" data-target="#modal-1"> <i class="fa fa-sign-in"></i> Вход&nbsp;&nbsp;|&nbsp;&nbsp;Регистрация </a>
             <?php } ?>
         </div>
         <!-- конец ссылка вход регистрация -->
@@ -165,10 +164,9 @@
                 <h5 class="modal-title">Вход / Регистрация.</h5>
             </div>
             <div class="modal-body">
-                <!--<div class="tabs">
-                    <div class="tab-content">-->
-                        <!--<div class="tab-pane fade in active" id="tab-1">-->
-                        <div>
+                <div class="tabs">
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="tab-1">
                             <h5>Введите логин и пароль</h5>
                             <form action="/modules/cab/auth.php" method="post">
                                 <div class="form-group">
@@ -179,14 +177,11 @@
                                     <!--<button class="btn btn-primary btn-sm" type="submit"><i class="fa fa-sign-in"></i> Вход </button>-->
                                     <button class="btn btn-sm btn-mymore" type="submit"><i class="fa fa-sign-in"></i> Вход </button>
                                 </p>
-                                <!--
                                 <p class="nav nav-tabs text-center">
                                     <a href="#tab-2" data-toggle="tab" class="my-er-modal"> Регистрация </a>
                                 </p>
-                                -->
                             </form>
                         </div>
-                        <!--
                         <div class="tab-pane fade " id="tab-2">
                             <h5>Введите логин, пароль и e-mail</h5>
                             <form action="" method="post">
@@ -196,6 +191,7 @@
                                     <p><input type="text" class="form-control" placeholder="E-mail" value=""></p>
                                 </div>
                                 <p class="text-center">
+                                    <!--<button class="btn btn-primary btn-sm" type="submit"><i class="fa fa-user-plus"></i> Регистрация </button>-->
                                     <button class="btn btn-sm btn-mymore" type="submit"><i class="fa fa-user-plus"></i> Регистрация </button>
                                 </p>
                                 <p class="nav nav-tabs text-center">
@@ -203,9 +199,8 @@
                                 </p>
                             </form>
                         </div>
-                        -->
-                    <!--</div>
-                </div>-->
+                    </div>
+                </div>
             </div>
         </div>
     </div>

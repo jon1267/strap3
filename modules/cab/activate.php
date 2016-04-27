@@ -7,11 +7,6 @@
 // со ссылкой для активации его аккаунта. Юзер кликнул по ссылке и сюда 
 // пришло $_GET['id'] и $_GET['hash'] 
 if(isset($_GET['hash'],$_GET['id'])) {
-//	q("
-//	UPDATE `users` SET
-//	`active`   = ".(int)'1'."
-//	WHERE `hash` = ".$_GET['hash']."
-//	");	
 	q("
 		UPDATE `users` SET
 		`active` = 1
